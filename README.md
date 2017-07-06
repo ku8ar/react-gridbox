@@ -95,9 +95,8 @@ resizeClassName: String
 ```
 
 ## FAQ
----
-How to add animations?: At the moment, CSS Grid Layout does not support CSS transitions
----
+- How to add animations?
+At the moment, CSS Grid Layout does not support CSS transitions.
 
 ## Contribute
 Yes, plizz.
