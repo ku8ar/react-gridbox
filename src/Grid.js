@@ -87,6 +87,7 @@ class Resizer extends PureComponent {
 
     const { key, clientX, clientY, itemX, itemY, itemH, itemW } = monitor.getItem()
     const { cols, rowHeight } = props
+    // @TODO: poor perf
     const { left, width, top, height } = ReactDOM.findDOMNode(component.ref).getBoundingClientRect()
     const { x, y } = monitor.getClientOffset()
 
