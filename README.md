@@ -1,7 +1,7 @@
 # React GridBox
 Probably first Grid Layout System on React using [CSS Grid Layout](https://css-tricks.com/snippets/css/complete-guide-grid/).
 [**[Demo](https://ku8ar.github.io/react-gridbox)**]
-![Imgur](http://i.imgur.com/iKFBaT1.gifv)
+![Imgur](http://i.imgur.com/iKFBaT1.gif)
 
 ## Table of Contents
 - [Features](#features)
