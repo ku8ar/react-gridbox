@@ -8,6 +8,7 @@ Probably first Grid Layout System on React using [CSS Grid Layout](https://css-t
 - [Installation](#installation)
 - [Example Usage](#example-usage)
 - [Props](#props)
+- [FAQ](#faq)
 - [Contribute](#contribute)
 - [TODO List](#todo-list)
 
@@ -92,6 +93,11 @@ moveClassName: String
 resizeClassName: String
 
 ```
+
+## FAQ
+---
+How to add animations?: At the moment, CSS Grid Layout does not support CSS transitions
+---
 
 ## Contribute
 Yes, plizz.
