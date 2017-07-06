@@ -1,0 +1,29 @@
+.base {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #d8dde6;
+}
+
+.card {
+  @extend .base;
+  padding: 0;
+  background: #f4f6f9;
+  border: 1px solid #d8dde6;
+  border-radius: 0.25rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+.active {
+  outline: 0;
+  border-color: #1589ee;
+  box-shadow: 0 0 3px #0070D2;
+  border-style: solid;
+}
+
+.resize {
+	border-bottom: 1rem solid #005fb2;
+	border-left: 1rem solid transparent;
+}
