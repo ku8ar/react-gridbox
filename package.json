@@ -1,6 +1,6 @@
 {
   "name": "react-gridbox",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Draggable & resizable CSS grid layout for React.",
   "main": "dist/main.js",
   "scripts": {
