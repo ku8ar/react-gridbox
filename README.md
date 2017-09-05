@@ -105,5 +105,5 @@ Yes, plizz.
 - [x] Basic skeleton
 - [x] DnD: Move, resize
 - [ ] Read only mode
-- [ ] Collision detection or z-layers
+- [x] Collision detection
 - [ ] Refactoring code, removing junk boilerplate
