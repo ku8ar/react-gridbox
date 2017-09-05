@@ -174,7 +174,9 @@ export default class extends Component {
     this.ref = ref
   }
   handleChangePosition = (key, x, y, w, h) =>
-    this.props.onChange([...this.props.layout].map(l =>
+    !this.props.layout.find(l => // @TODO: add broad phase
+      l.key !== key && l.x < x + w && l.x + l.w > x && l.y < y + h && l.h + l.y > y
+    ) && this.props.onChange([...this.props.layout].map(l =>
       l.key === key ? { ...l, x, y, w, h } : l))
   setStartPosition = (e) =>
     this.setState({ clientX: e.clientX, clientY: e.clientY })
