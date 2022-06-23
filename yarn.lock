@@ -135,6 +135,10 @@
     react-split-pane "^0.1.63"
     redux "^3.6.0"
 
+"@tootallnate/once@1":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
+
 abbrev@1, abbrev@1.0.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -173,6 +177,12 @@ acorn@^5.0.0, acorn@^5.0.1:
 after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
+
+agent-base@6:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
+  dependencies:
+    debug "4"
 
 airbnb-js-shims@^1.1.1:
   version "1.1.1"
@@ -1794,13 +1804,15 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codecov@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/codecov/-/codecov-2.2.0.tgz#2d06817ceb8891eca6368836d4fb6bf6cc04ffd1"
+codecov@^3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.8.3.tgz#9c3e364b8a700c597346ae98418d09880a3fdbe7"
   dependencies:
     argv "0.0.2"
-    request "2.79.0"
-    urlgrey "0.4.4"
+    ignore-walk "3.0.4"
+    js-yaml "3.14.1"
+    teeny-request "7.1.1"
+    urlgrey "1.0.0"
 
 collapse-white-space@^1.0.0:
   version "1.0.2"
@@ -2311,6 +2323,12 @@ debug@3.2.6:
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   dependencies:
     ms "^2.1.1"
+
+debug@4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  dependencies:
+    ms "2.1.2"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2, decamelize@^1.2.0:
   version "1.2.0"
@@ -2917,13 +2935,13 @@ esprima@2.7.x, esprima@^2.6.0, esprima@^2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
-esprima@^3.1.1, esprima@~3.1.0:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
-
 esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
+
+esprima@~3.1.0:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
 
 esquery@^1.0.0:
   version "1.0.0"
@@ -3147,6 +3165,12 @@ fast-levenshtein@~2.0.4:
 fast-memoize@^2.2.7:
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/fast-memoize/-/fast-memoize-2.2.7.tgz#f145c5c22039cedf0a1d4ff6ca592ad0268470ca"
+
+fast-url-parser@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/fast-url-parser/-/fast-url-parser-1.1.3.tgz#f4af3ea9f34d8a271cf58ad2b3759f431f0b318d"
+  dependencies:
+    punycode "^1.3.2"
 
 fastparse@^1.1.1:
   version "1.1.1"
@@ -3926,6 +3950,14 @@ http-errors@~1.6.1:
     setprototypeof "1.0.3"
     statuses ">= 1.3.1 < 2"
 
+http-proxy-agent@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/http-proxy-agent/-/http-proxy-agent-4.0.1.tgz#8a8c8ef7f5932ccf953c296ca8291b95aa74aa3a"
+  dependencies:
+    "@tootallnate/once" "1"
+    agent-base "6"
+    debug "4"
+
 http-proxy@^1.13.0:
   version "1.16.2"
   resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.16.2.tgz#06dff292952bf64dbe8471fa9df73066d4f37742"
@@ -3944,6 +3976,13 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
+
+https-proxy-agent@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
+  dependencies:
+    agent-base "6"
+    debug "4"
 
 humanize-url@^1.0.0:
   version "1.0.1"
@@ -3967,6 +4006,12 @@ icss-replace-symbols@^1.0.2:
 ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
+
+ignore-walk@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/ignore-walk/-/ignore-walk-3.0.4.tgz#c9a09f69b7c7b479a5d74ac1a3c0d4236d2a6335"
+  dependencies:
+    minimatch "^3.0.4"
 
 ignore@^3.0.11, ignore@^3.2.0:
   version "3.3.0"
@@ -4368,12 +4413,12 @@ js-yaml@3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@3.x, js-yaml@^3.4.3, js-yaml@^3.5.1:
-  version "3.8.4"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.4.tgz#520b4564f86573ba96662af85a8cafa7b4b5a6f6"
+js-yaml@3.14.1, js-yaml@3.x, js-yaml@^3.4.3, js-yaml@^3.5.1:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   dependencies:
     argparse "^1.0.7"
-    esprima "^3.1.1"
+    esprima "^4.0.0"
 
 js-yaml@~3.7.0:
   version "3.7.0"
@@ -5126,7 +5171,7 @@ ms@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
-ms@^2.1.1:
+ms@2.1.2, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
 
@@ -5185,6 +5230,12 @@ node-fetch@^1.0.1:
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
+
+node-fetch@^2.6.1:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-gyp@^3.3.1:
   version "3.6.1"
@@ -6194,7 +6245,7 @@ punycode@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
 
-punycode@^1.2.4, punycode@^1.4.1:
+punycode@^1.2.4, punycode@^1.3.2, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
@@ -6687,7 +6738,7 @@ request-progress@~2.0.1:
   dependencies:
     throttleit "^1.0.0"
 
-request@2, request@2.79.0, request@^2.79.0, request@~2.79.0:
+request@2, request@^2.79.0, request@~2.79.0:
   version "2.79.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:
@@ -7213,6 +7264,12 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
+stream-events@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/stream-events/-/stream-events-1.0.5.tgz#bbc898ec4df33a4902d892333d47da9bf1c406d5"
+  dependencies:
+    stubs "^3.0.0"
+
 stream-http@^2.3.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/stream-http/-/stream-http-2.7.1.tgz#546a51741ad5a6b07e9e31b0b10441a917df528a"
@@ -7352,6 +7409,10 @@ strip-url-auth@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/strip-url-auth/-/strip-url-auth-1.0.1.tgz#22b0fa3a41385b33be3f331551bbb837fa0cd7ae"
 
+stubs@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/stubs/-/stubs-3.0.0.tgz#e8d2ba1fa9c90570303c030b6900f7d5f89abe5b"
+
 style-loader@^0.17.0:
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.17.0.tgz#e8254bccdb7af74bd58274e36107b4d5ab4df310"
@@ -7448,6 +7509,16 @@ tar@^2.0.0, tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
+teeny-request@7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/teeny-request/-/teeny-request-7.1.1.tgz#2b0d156f4a8ad81de44303302ba8d7f1f05e20e6"
+  dependencies:
+    http-proxy-agent "^4.0.0"
+    https-proxy-agent "^5.0.0"
+    node-fetch "^2.6.1"
+    stream-events "^1.0.5"
+    uuid "^8.0.0"
+
 tether@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.0.tgz#0f9fa171f75bf58485d8149e94799d7ae74d1c1a"
@@ -7505,6 +7576,10 @@ tough-cookie@~2.3.0:
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"
   dependencies:
     punycode "^1.4.1"
+
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
 
 traverse@^0.6.6:
   version "0.6.6"
@@ -7667,9 +7742,11 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-urlgrey@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/urlgrey/-/urlgrey-0.4.4.tgz#892fe95960805e85519f1cd4389f2cb4cbb7652f"
+urlgrey@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/urlgrey/-/urlgrey-1.0.0.tgz#72d2f904482d0b602e3c7fa599343d699bbe1017"
+  dependencies:
+    fast-url-parser "^1.1.3"
 
 user-home@^2.0.0:
   version "2.0.0"
@@ -7718,6 +7795,10 @@ uuid@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
+uuid@^8.0.0:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.1.tgz#2804babe712ad3379459acfbe24746ab2c303fbc"
@@ -7762,6 +7843,10 @@ watchpack@^1.3.1:
     async "^2.1.2"
     chokidar "^1.4.3"
     graceful-fs "^4.1.2"
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
 
 webpack-dev-middleware@^1.0.11, webpack-dev-middleware@^1.10.2, webpack-dev-middleware@^1.8.4:
   version "1.10.2"
@@ -7824,6 +7909,13 @@ webpack@^2.5.1:
 whatwg-fetch@>=0.10.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 whet.extend@~0.9.9:
   version "0.9.9"
